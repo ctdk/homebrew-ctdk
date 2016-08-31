@@ -15,6 +15,7 @@ Read more at the [homebrew tap documentation](https://github.com/Homebrew/brew/b
 ## Contents of this tap
 
 * [`bsdgames-osx`](https://github.com/ctdk/bsdgames-osx)
+* [`jovian-noise`](https://github.com/ctdk/jovian-noise)
 
 ## Documentation
 `brew help`, `man brew` or check [Homebrew's documentation](https://github.com/Homebrew/brew/tree/master/share/doc/homebrew#readme).
