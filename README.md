@@ -14,6 +14,7 @@ Read more at the [homebrew tap documentation](https://github.com/Homebrew/brew/b
 
 ## Contents of this tap
 
+* [`goiardi`](http://goiardi.gl) [(github)](https://github.com/ctdk/goiardi)
 * [`bsdgames-osx`](https://github.com/ctdk/bsdgames-osx)
 * [`jovian-noise`](https://github.com/ctdk/jovian-noise)
 
