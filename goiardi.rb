@@ -1,8 +1,8 @@
 class Goiardi < Formula
   desc "Chef server written in Go."
   homepage "http://goiardi.gl"
-  url "https://github.com/ctdk/goiardi/archive/v0.10.4.tar.gz"
-  sha256 "fb0bfc38e809989b33129b1e7643e37d52bf6a6c5fc57e8945aa5dea28afae13"
+  url "https://github.com/ctdk/goiardi/archive/v0.11.0.tar.gz"
+  sha256 "dee99293d75693ecf7b7e17d8d30b2544e0ce62d0b7b4a8f9b57b2ab256cdd5f"
 
   head "https://github.com/ctdk/goiardi.git"
 
@@ -26,7 +26,7 @@ class Goiardi < Formula
   end
 
   def caveats
-    "Goiardi can use MySQL or PostgreSQL as its database backend. If you wish to do so, install your desired variant of either and edit #{HOMEBREW_PREFIX}/etc/goiardi/goiardi.conf accordingly. There is a webui available at https://github.com/ctdk/chef-server-webui for goiardi as well that is outside of the scope of this formula to install.\n\nAlso the sample config file is not suitable for actually running goiardi. Customize it before starting it up."
+    "Goiardi can use MySQL or PostgreSQL as its database backend. If you wish to do so, install your desired variant of either and edit #{HOMEBREW_PREFIX}/etc/goiardi/goiardi.conf accordingly. There is a webui available at https://github.com/ctdk/chef-server-webui for goiardi as well that is outside of the scope of this formula to install.\n\nAlso the sample config file is not suitable for actually running goiardi. Customize it before starting it up.\nNB: If you're upgrading from 0.10.4 or before to 0.11.0 and you're using the Postgres search, run 'knife index rebuild' after upgrading."
   end
 
   plist_options :manual => "goiardi -c #{HOMEBREW_PREFIX}/etc/goiardi/goiardi.conf"
