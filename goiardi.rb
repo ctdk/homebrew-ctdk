@@ -1,8 +1,8 @@
 class Goiardi < Formula
   desc "Chef server written in Go."
   homepage "http://goiardi.gl"
-  url "https://github.com/ctdk/goiardi/archive/v0.11.1.tar.gz"
-  sha256 "439bc28d58354053dc6eb8df36ee670ef8898d31232efecd5eec3c78480927e6"
+  url "https://github.com/ctdk/goiardi/archive/v0.11.2.tar.gz"
+  sha256 "35d215b76a66cb273dccd6b72a6c24a1e2c9c8a983f0cb70e5d40d5720222d3c"
 
   head "https://github.com/ctdk/goiardi.git"
 
