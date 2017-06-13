@@ -1,8 +1,8 @@
 class JovianNoise < Formula
   desc "Forecasts Jupiter decameter radio storms."
   homepage "https://github.com/ctdk/jovian-noise"
-  url "https://github.com/ctdk/jovian-noise/archive/v0.1.5.tar.gz"
-  sha256 "72aaaf1360ecd072999e3164c5b45b1b7583467c68d69b0c9f786ca21bf2a4f1"
+  url "https://github.com/ctdk/jovian-noise/archive/v0.1.6.tar.gz"
+  sha256 "e6e4ac776a55ecc577eae2781729358a7e945d7a7d8569dce3aab52f8e3f156a"
 
   head "https://github.com/ctdk/jovian-noise.git"
 
