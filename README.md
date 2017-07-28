@@ -1,4 +1,4 @@
-# Homebrew Grafana
+# Homebrew Taps
 
 A homebrew tap for installing some programs I've written.
 
