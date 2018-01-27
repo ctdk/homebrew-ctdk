@@ -1,8 +1,8 @@
 class Goiardi < Formula
   desc "Chef server written in Go."
   homepage "http://goiardi.gl"
-  url "https://github.com/ctdk/goiardi/archive/v0.11.5.tar.gz"
-  sha256 "26ef9170e0e503a17816f4cca5ef7e2a3fdd7ebdd4bd9091a34d4491db4c23f9"
+  url "https://github.com/ctdk/goiardi/archive/v0.11.7.tar.gz"
+  sha256 "a74d81170068e5b138d46c9162b5df43e6e8c5969550cb9df2016f01555755fe"
 
   head "https://github.com/ctdk/goiardi.git"
 
@@ -15,6 +15,9 @@ class Goiardi < Formula
     cd goiardi_path do
       system "go", "get", "github.com/ctdk/goiardi"
       system "go", "build", "-o", bin/"goiardi"
+      system "#{bin}/goiardi --print-man-page > goiardi.8"
+      inreplace "goiardi.8", ".TH goiardi 1", ".TH goiardi 8"
+      man8.install "goiardi.8"
       (etc/"goiardi").mkpath
       etc.install "etc/goiardi.conf-sample" => "goiardi/goiardi.conf"
     end
@@ -31,7 +34,7 @@ class Goiardi < Formula
 
   plist_options :manual => "goiardi -c #{HOMEBREW_PREFIX}/etc/goiardi/goiardi.conf"
 
-  def plist; <<-EOS.undent
+  def plist; <<~EOS
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
     <plist version="1.0">
