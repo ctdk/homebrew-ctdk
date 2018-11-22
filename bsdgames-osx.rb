@@ -13,7 +13,7 @@ class BsdgamesOsx < Formula
   depends_on "bsdmake" => :build
 
   def install
-    ENV.j1
+    ENV.deparallelize
     # This replicates the behavior of wargames calling games from /usr/games
     inreplace "wargames/wargames.sh", "/usr/games", bin
     system "CFLAGS=\"-std=c11\" bsdmake PREFIX=#{prefix} VARDIR=#{HOMEBREW_PREFIX}/var/games"
