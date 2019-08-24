@@ -9,7 +9,9 @@ class BsdgamesOsx < Formula
   homepage "https://github.com/ctdk/bsdgames-osx"
   url "https://github.com/ctdk/bsdgames-osx/archive/bsdgames-osx-2.19.4.tar.gz"
   sha256 "ae27651e709783e3f76038c85753d53ee36f86b4116802760c977595e284555d"
+
   head "https://github.com/ctdk/bsdgames-osx.git"
+
   depends_on "bsdmake" => :build
 
   def install
