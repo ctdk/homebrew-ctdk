@@ -1,6 +1,6 @@
 # Homebrew Taps
 
-A homebrew tap for installing some programs I've written.
+A Homebrew tap for installing some programs I've written.
 
 ## How do I use this?
 
@@ -10,7 +10,7 @@ Then, install the program you want with `brew install <formula>`.
 
 You could also install a program with `brew install ctdk/ctdk/<formula>`, or via URL (but doing that way won't get updates) with `brew install https://raw.githubusercontent.com/ctdk/homebrew-ctdk/master/<formula>.rb`.
 
-Read more at the [homebrew tap documentation](https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/brew-tap.md).
+Read more at the [Homebrew tap documentation](https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/brew-tap.md).
 
 ## Contents of this tap
 
